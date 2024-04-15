@@ -1,0 +1,88 @@
+<style>
+    body {
+        margin: 0;
+        font-family: 'AR One Sans', sans-serif;
+        overflow-x: hidden; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        min-height: 100vh;
+    }
+
+    .container {
+        margin: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+    .image-section {
+        flex: 1;
+        background-size: cover;
+        background-position: center;
+        max-width: 50%; 
+    }
+
+    .image-section img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .text-section {
+        flex: 1;
+        padding: 20px;
+        max-width: 50%; 
+    }
+
+    .heading {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .subtext {
+        margin-bottom: 20px;
+    }
+
+    .list {
+        margin-bottom: 20px;
+    }
+
+    .contact-btn {
+        background-color: #0056b3;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .image-section,
+        .text-section {
+            max-width: 100%; 
+            width: 100%; 
+            height: auto; 
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="image-section">
+        <img src="./images_and_icons/writing.jpg" alt="image">
+    </div>
+    <div class="text-section">
+        <h1 class="heading">We create <br>architecture that <br>inspires</h1>
+        <p class="subtext">Image from freepik</p>
+        <ul class="list">
+            <li>Data aute irure dolor</li>
+            <li>Et enim ad minim</li>
+        </ul>
+        <a href="#" class="contact-btn">Contact Us</a>
+    </div>
+</div>
